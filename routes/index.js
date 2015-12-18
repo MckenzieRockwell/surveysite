@@ -24,6 +24,10 @@ router.get('/register', function(req, res, next){
 	res.render('partials/register');
 }); 
 
+router.get('/newsurvey', function(req, res, next){
+	res.render('newsurvey');
+}); 
+
 router.post('/register', passport.authenticate('register', 
 	{
 		successRedirect: '/congrats',
